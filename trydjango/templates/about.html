@@ -2,5 +2,25 @@
 
 {% block content %}
 <h1>About page</h1>
+
+<h3>{{ title|capfirst|title }}</h3>
 <p>This is a template</p>
+
+<p>
+    {{ title }}, {{ my_number }}, {{ my_list }}
+    {{ my_html|safe|striptags|slugify }}
+</p>
+
+<ul>
+    {% for i in my_list %}
+        {% if i == 7665 %}
+            <li>{{ forloop.counter }}: {{ i|add:22 }}</li>
+        {% elif i == 5656 %}
+            <li>Deez Nuts</li>
+        {% else %}
+        <li>{{ forloop.counter }}: {{ i }}</li>
+        {% endif %}
+    {% endfor %}
+</ul>
+
 {% endblock %}
