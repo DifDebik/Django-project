@@ -40,9 +40,11 @@ INSTALLED_APPS = [
 
     # third party
 
-    #own
+    # own
     'products',
     'pages',
+    'blog',
+
 ]
 
 MIDDLEWARE = [
