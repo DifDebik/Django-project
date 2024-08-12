@@ -29,7 +29,7 @@ To get a local copy up and running, follow these steps:
 
 1. Clone the repository:
     ```sh
-    git clone https://github.com/yourusername/yourproject.git
+    git clone https://github.com/DifDebik/Django-project.git
     ```
 
 2. Navigate to the project directory:
